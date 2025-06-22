@@ -1,0 +1,135 @@
+<message date="2025-06-16 18:56:08" up_time="0:0:0.0">
+***************************************************************************************************
+*                                         Rocky DEM Solver                                        *
+*                           3D Discrete Element Modeling (DEM) Simulator                          *
+*                                        Version 2023.0124                                        *
+*                                          Release 23.1.0                                         *
+
+*                               (c) 2023 ESSS - All Rights Reserved                               *
+***************************************************************************************************
+
+</message>
+<message date="2025-06-16 18:56:08" up_time="0:0:0.0">
+Command line: 
+    C:\Program Files\ESSS\Rocky 2023 R1\bin\RockySolver.exe
+    --rcy-file=C:\Users\kalpa\Desktop\Rocky simulations\Simulation 1.rocky.files\simulation/rocky_simulation.rocky20
+    --license=C:\Users\kalpa\AppData\Roaming\Rocky\license.lic
+    --ncpus=8
+    --use-gpu
+    --gpu-num=0
+</message>
+<message date="2025-06-16 18:56:08" up_time="0:0:0.0">
+License setup: 
+	Path: C:\Users\kalpa\AppData\Roaming\Rocky\license.lic
+	Vendor: ESSS
+	Heartbeat: 300
+	N. Retries: 5
+</message>
+<message date="2025-06-16 18:56:08" up_time="0:0:0.54">
+NVIDIA Display Driver version: 576.28
+</message>
+<message date="2025-06-16 18:56:08" up_time="0:0:0.54">
+Parameters:
+	Input filename: C:\Users\kalpa\Desktop\Rocky simulations\Simulation 1.rocky.files\simulation/rocky_simulation.rocky20
+	Number of processors to use: 8
+	Resume previous simulation: 0
+	Use GPU: 1
+	GPU index(1): 0 
+	HDF library version: 1.10.6
+</message>
+<message date="2025-06-16 18:56:08" up_time="0:0:0.54">
+CPU info:
+	CPU brand: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+	Core count: 8
+</message>
+<message date="2025-06-16 18:56:08" up_time="0:0:0.55">
+	Checkout solver license: rocky_bundle_professional
+</message>
+<message date="2025-06-16 18:56:08" up_time="0:0:0.57">
+	Checkout 8 Rocky HPC unit licenses granted.
+</message>
+<message date="2025-06-16 18:56:08" up_time="0:0:0.187">
+Rocky's CUDA Runtime version: 11.7
+Driver's CUDA Supported version: 12.9
+***************************************************************************************************
+GPU: 0 id(0): NVIDIA GeForce MX330
+	IsGPUCapableP2P: 0
+	Compute capability: 6.1
+	TCC: 0
+	Total amount of global memory: 2147352576 = 2047MB
+	Device can concurrently copy memory between host and device: 1
+	Multi-Processor Count: 3
+	Run time limit for kernels executed: 1
+	Single to Double Precision Perf. Ratio: 32
+	Memory Status: 1639MB free
+***************************************************************************************************
+
+</message>
+<message date="2025-06-16 18:56:08" up_time="0:0:0.188">
+Dynamically allocated arrays growth rate set to: 1.1
+</message>
+<message date="2025-06-16 18:56:08" up_time="0:0:0.190">
+Found an advanced parameters file, overwriting configuration.
+Setting breakage_overlap_factor to 0.25
+Setting reset_only_physical_contacts_data to 0
+Setting refine_concave_search to 1
+Setting use_non_round_torque_correction to 1
+Setting linear_hyst_damp to 0
+Setting monitor frequency to 1
+Setting radl_update_distance_multiplier to 1
+Setting radl_neighbor_distance_multiplier to 3
+Using grid search: false
+Using sparse grid: false
+
+</message>
+<setup date="2025-06-16 18:56:08" up_time="0:0:0.194">
+Particles:
+	Name: Sugar particle
+	Shape: ptSpherical
+	Material Index: 0
+	Smallest sieve size: 0.003
+	Meshing type: pmtNone
+	--------------------
+	Name: Flour particle
+	Shape: ptSpherical
+	Material Index: 3
+	Smallest sieve size: 0.001
+	Meshing type: pmtNone
+	--------------------
+
+</setup>
+<setup date="2025-06-16 18:56:08" up_time="0:0:0.194">
+Materials:
+	Index: 0
+	Name: Sugar
+	Stiffness: 1e+07
+	--------------------
+	Index: 1
+	Name: Default Belt
+	Stiffness: 1e+10
+	--------------------
+	Index: 2
+	Name: Default Boundary
+	Stiffness: 1e+10
+	--------------------
+	Index: 3
+	Name: Flour
+	Stiffness: 1e+06
+	--------------------
+
+</setup>
+RMax: 0.0015 group rmax: 0.0015
+<message date="2025-06-16 18:56:09" up_time="0:0:0.226">
+Loading addins configuration: C:\Users\kalpa\Desktop\Rocky simulations\Simulation 1.rocky.files\simulation\addins.config
+</message>
+<message date="2025-06-16 18:56:09" up_time="0:0:0.245">
+Simulation setup done!
+</message>
+<critical date="2025-06-16 18:56:09" up_time="0:0:0.245">
+The SPH Mass Flow Rate module can be used only if SPH is active in the project.
+</critical>
+<info date="2025-06-16 18:56:09" up_time="0:0:0.245">
+Solver exception: Dynamic exception type: class std::runtime_error
+std::exception::what: The SPH Mass Flow Rate module can be used only if SPH is active in the project.
+
+</info>
